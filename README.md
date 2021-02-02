@@ -12,7 +12,7 @@ In this Demo we will configure Spring Framework in Visual Studio Code and we wil
 
 - Spring Boot Extension Pack. That pack includes all the extensions you need.
 
-![SpringPack](spring-pack.png)
+![SpringPack](https://stackoverflow.com/questions/11915826/image-not-showing-up-in-readme-md-on-github/spring-pack.png)
 
 
 ### Create a project
