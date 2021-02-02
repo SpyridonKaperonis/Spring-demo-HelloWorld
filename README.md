@@ -12,7 +12,7 @@ In this Demo we will configure Spring Framework in Visual Studio Code and we wil
 
 - Spring Boot Extension Pack. That pack includes all the extensions you need.
 
-![SpringPack](https://stackoverflow.com/questions/11915826/image-not-showing-up-in-readme-md-on-github/spring-pack.jpg)
+![SpringPack](spring-pack.jpg)
 
 
 ### Create a project
@@ -37,5 +37,7 @@ Once you have the Extension pack installed you can proceed.
 ![Dependencies](dependencies.jpg)
 
  After you hit enter it will ask you to generate the project in the folder you are in. Generate it in any folder you like.
+
+![Generate](generate.jpg)
 
 
