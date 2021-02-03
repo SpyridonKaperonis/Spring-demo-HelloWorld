@@ -14,4 +14,10 @@ public class DemoController {
         return "Hello World";
 
     }
+
+    @RequestMapping(value ="/login", method = RequestMethod.GET)
+    @ResponseBody
+    public String login(){
+        return "login";
+    }
 }

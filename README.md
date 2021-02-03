@@ -2,7 +2,7 @@
 
 ## Description
 
-In this Demo we will configure Spring Framework in Visual Studio Code and we will run a simple Hello World application. 
+In this Demo we will configure Spring Framework in Visual Studio Code and we will run a simple Hello World application.
 
 ### Requirements
 
@@ -10,12 +10,19 @@ In this Demo we will configure Spring Framework in Visual Studio Code and we wil
 
 ### Extensions
 
-- Spring Boot Extension Pack. That pack includes all the extensions you need.
+- Spring Boot Tools
 
-![SpringPack](spring-pack.jpg)
+![SpringBoot](springbootTools.jpg)
 
+- Spring Initializr Java Support
 
-### Create a project
+![SpringInit](springInitSupport.jpg)
+
+- Spring Boot Dashboard
+
+![SpringDashboard](springbootDashboard.jpg)
+
+## Create a project
 
 Once you have the Extension pack installed you can proceed. 
 
@@ -40,4 +47,64 @@ Once you have the Extension pack installed you can proceed.
 
 ![Generate](generate.jpg)
 
+#
+## Hello World
 
+Your demo project will look something like this
+
+![Demo](helloW.jpg)
+
+- Go to src/main/java
+    - You will find the ```DemoApplication.java```
+- Create a new file called  ```DemoController.java```
+
+- Add these lines of code in DemoController.java  
+
+```
+package com.example.demo;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+
+@Controller
+public class DemoController {
+
+    @RequestMapping( value = "/", method = RequestMethod.GET)
+    @ResponseBody
+    public String helloWorld(){
+        return "Hello World!";
+    }
+}
+
+```
+
+- Add another method in DemoController.java if you want to play with directories
+
+```
+    @RequestMapping( value = "/news", method = RequestMethod.GET)
+    @ResponseBody
+    public String helloWorld(){
+        return "";
+    }
+
+```
+
+- Run your project with ```Spring boot dashboard``` which is located in the bottom left of the window.
+
+![SpringDashboard](runspringDash.jpg)
+
+#
+
+- Click open in Browser
+
+![Openinbrowser](clickOpen.jpg)
+
+
+### Browser
+
+![Browser](main.jpg)
+
+![login](login.jpg)
